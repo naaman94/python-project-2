@@ -356,7 +356,7 @@ def maxEmployessSalary():
     salary=[]
     for x in EmployeesList:
         salary.append(x.getSalary())
-    return "maximum Employees Salary is "+str(max(salary))
+    return "Maximum Employees Salary is "+str(max(salary))
 print(maxEmployessSalary())
 
 def minEmployessSalary():
@@ -371,14 +371,15 @@ def report():
     report_sc.geometry("400x400+400+400")   
     
     number = StringVar()    
-    report1 = Label(report_sc, font=("Helvetica", 16),text = get_total_emp()).grid(row=0, column = 0)
-    report2=  Label(report_sc, font=("Helvetica", 16),text = get_total_std()).grid(row=1, column = 0)
-    report3 = Label(report_sc, font=("Helvetica", 16),text = hiesistStudentAvg()).grid(row=2, column = 0)
-    report4 = Label(report_sc, font=("Helvetica", 16),text =  minLoan()).grid(row=3, column = 0)
-    report5 = Label(report_sc, font=("Helvetica", 16),text =  maxLoan()).grid(row=4, column = 0)
-    report6 = Label(report_sc, font=("Helvetica", 16), text =  minEmployessSalary()).grid(row=4, column = 0)
-    report7 = Label(report_sc, font=("Helvetica", 16),text =  maxEmployessSalary()).grid(row=4, column = 0)
-
+    report1 = Label(report_sc, font=("Helvetica", 16),text = get_total_emp(),padx=10,pady=10).grid(row=0, column = 0)
+    report2=  Label(report_sc, font=("Helvetica", 16),text = get_total_std(),padx=10,pady=10).grid(row=1, column = 0)
+    report3 = Label(report_sc, font=("Helvetica", 16),text = hiesistStudentAvg(),padx=10,pady=10).grid(row=2, column = 0)
+    report4 = Label(report_sc, font=("Helvetica", 16),text =  minLoan(),padx=10,pady=10).grid(row=3, column = 0)
+    report5 = Label(report_sc, font=("Helvetica", 16),text =  maxLoan(),padx=10,pady=10).grid(row=4, column = 0)
+    report6 = Label(report_sc, font=("Helvetica", 16), text =  minEmployessSalary(),padx=10,pady=10).grid(row=4, column = 0)
+    report7 = Label(report_sc, font=("Helvetica", 16),text =  maxEmployessSalary(),padx=10,pady=10).grid(row=4, column = 0)
+label=tk.Label(root,text="Project 2",font=('times',20,'bold'),padx=10,pady=10)
+label.pack()
 top = Menu(root)
 root.config(menu=top)
 file = Menu(top,tearoff=0)
@@ -402,7 +403,6 @@ top.add_cascade(label='Students', menu=Students)
 Help = Menu(top,tearoff= 0)
 Help.add_command(label='About', command=_about)
 top.add_cascade(label='Help', menu=Help)
-
 root.mainloop()
 
 
