@@ -378,7 +378,7 @@ def report():
     report5 = Label(report_sc, font=("Helvetica", 16),text =  maxLoan(),padx=10,pady=10).grid(row=4, column = 0)
     report6 = Label(report_sc, font=("Helvetica", 16), text =  minEmployessSalary(),padx=10,pady=10).grid(row=4, column = 0)
     report7 = Label(report_sc, font=("Helvetica", 16),text =  maxEmployessSalary(),padx=10,pady=10).grid(row=4, column = 0)
-label=tk.Label(root,text="Project 2",font=('times',20,'bold'),padx=10,pady=10)
+label=Label(root,text="Project 2",font=('times',20,'bold'),padx=10,pady=10)
 label.pack()
 top = Menu(root)
 root.config(menu=top)
